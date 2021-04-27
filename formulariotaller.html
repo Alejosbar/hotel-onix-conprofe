@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formnulario</title>
+</head>
+
+<body>
+    <H1 style="color:crimson">Selecciona la información requerida</H1>
+    <script src="js/formulariotaller.js"></script>
+    <form action="">
+        <label>Nombres</label>
+        <input id="nombre" type="text" placeholder="Ingresa tus Nombres"><br>
+        <label>Apellidos</label>
+        <input id="apellido" type="text" placeholder="Ingresa tus Apellidos"><br>
+        <button onclick="alerta()">Mostrar</button><br><br>
+
+        <label>Tipo de Documento</label><br>
+        <label for="">CC</label>
+        <input type="radio" onclick="documentos('El documento seleccionado es: CC')">
+        <label for="">CE</label>
+        <input type="radio" onclick="documentos('El documento seleccionado es: CE')">
+        <label for="">NIT</label>
+        <input type="radio" onclick="documentos('El documento seleccionado es: NIT')">
+    </form>
+</body>
+
+</html>
